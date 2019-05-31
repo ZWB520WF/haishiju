@@ -1,0 +1,209 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8">
+<meta http-equiv="Cache-Control" content="no-cache" />
+<meta name="viewport" content="width=device-width" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<meta name="format-detection" content="telephone=yes" />
+<title>现场监管任务集约化管理系统</title>
+<!-- head 中 -->
+<link rel="stylesheet" href="https://cdn.bootcss.com/weui/1.1.3/style/weui.min.css">
+<link rel="stylesheet" href="https://cdn.bootcss.com/jquery-weui/1.2.1/css/jquery-weui.min.css">
+
+<!-- body 最后 -->
+<script src="https://cdn.bootcss.com/jquery/1.11.0/jquery.min.js"></script>
+<script src="https://cdn.bootcss.com/jquery-weui/1.2.1/js/jquery-weui.min.js"></script>
+
+<!-- 如果使用了某些拓展插件还需要额外的JS -->
+<script src="https://cdn.bootcss.com/jquery-weui/1.2.1/js/swiper.min.js"></script>
+<script src="https://cdn.bootcss.com/jquery-weui/1.2.1/js/city-picker.min.js"></script>
+
+<!-- 页面CSS样式 -->
+<link rel="stylesheet" type="text/css" href="css/style.css"/>
+<link rel="stylesheet" type="text/css" href="font/iconfont.css"/>
+</head>
+
+<body>
+<div class="app">
+  <div class="win">
+    <div class="header-box"> <a href="#" class="return-a"><i class="iconfont icon-jiantouarrowhead7"></i></a>监管信息填写</div>
+    <div class="view">
+      <form class="form-box">
+        <div class="lanmu">请填写审核意见</div>
+        <ul class="rw-list">
+          <li class="select-li"><span>审核人：</span>
+            <div class="weui-cell__bd">
+              <select class="weui-select" name="select1">
+                <option selected="" value="1">请选择</option>
+                <option value="2">QQ号</option>
+                <option value="3">Email</option>
+              </select>
+            </div>
+          </li>
+        </ul>
+        <div class="lanmu">请填写监管对象信息</div>
+        <ul class="rw-list rwl-list">
+          <li><span>船名这里多加几个字：</span>
+            <div class="weui-cell__bd">
+              <input class="weui-input" type="text" placeholder="请填写船名">
+            </div>
+          </li>
+          <li><span>国籍：</span>
+            <div class="weui-cell__bd">
+              <input class="weui-input" type="text" placeholder="请填写国籍">
+            </div>
+          </li>
+          <li><span>总吨数：</span>
+            <div class="weui-cell__bd">
+              <input class="weui-input" type="text" placeholder="请填写总吨数">
+            </div>
+          </li>
+          <!-- <li><span>审核意见：</span>
+            <div class="weui-cell__bd">
+              <textarea class="weui-textarea" placeholder="请填写审核意见" rows="3"></textarea>
+              <div class="weui-textarea-counter" style="text-align:right;"><em>0</em>/200</div>
+            </div>
+          </li>-->
+        </ul>
+        <div class="lanmu">请填写监管内容</div>
+        <ul class="jgnr-list">
+          <li>
+            <div class="nr-box"><span>1、</span>海员外派机构自查情况，检查自查报告及其他自查记录
+              性文件。<i class="iconfont icon-jiantou"></i></div>
+            <div class="jgnr-hide">
+              <ul class="rw-list">
+                <li class="select-li"><span>是否符合要求：</span>
+                  <div class="weui-cell__bd">
+                    <select class="weui-select" name="select1">
+                      <option selected="" value="1">请选择</option>
+                      <option value="2">是</option>
+                      <option value="3">否</option>
+                    </select>
+                  </div>
+                </li>
+                <li class="long-textarea"> <span>问题描述及处理措施：</span>
+                  <div class="weui-cell__bd">
+                    <textarea class="weui-textarea" placeholder="请填写问题描述及处理措施" rows="3"></textarea>
+                    <div class="weui-textarea-counter" style="text-align:right;"><em>0</em>/200</div>
+                  </div>
+                </li>
+                <li class="long-textarea"> <span>处理建议：</span>
+                  <div class="weui-cell__bd">
+                    <textarea class="weui-textarea" placeholder="请填写处理建议" rows="3"></textarea>
+                    <div class="weui-textarea-counter" style="text-align:right;"><em>0</em>/200</div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <div class="nr-box"><span>2、</span>新建船舶处于安放龙骨或处于相似建造阶段，重大改建船舶则处于尚未改建状态。<i class="iconfont icon-jiantou"></i></div>
+            <div class="jgnr-hide">
+              <ul class="rw-list">
+                <li class="select-li"><span>是否符合要求：</span>
+                  <div class="weui-cell__bd">
+                    <select class="weui-select" name="select1">
+                      <option selected="" value="1">请选择</option>
+                      <option value="2">是</option>
+                      <option value="3">否</option>
+                    </select>
+                  </div>
+                </li>
+                <li class="long-textarea"> <span>问题描述及处理措施：</span>
+                  <div class="weui-cell__bd">
+                    <textarea class="weui-textarea" placeholder="请填写问题描述及处理措施" rows="3"></textarea>
+                    <div class="weui-textarea-counter" style="text-align:right;"><em>0</em>/200</div>
+                  </div>
+                </li>
+                <li class="long-textarea"> <span>处理建议：</span>
+                  <div class="weui-cell__bd">
+                    <textarea class="weui-textarea" placeholder="请填写处理建议" rows="3"></textarea>
+                    <div class="weui-textarea-counter" style="text-align:right;"><em>0</em>/200</div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <div class="nr-box"><span>3、</span>船舶安放龙骨或处于相似建造阶段或重大改建地点的地理经纬度、船名或船厂识别编号或代码等信息已经在标识牌上标示。<i class="iconfont icon-jiantou"></i></div>
+            <div class="jgnr-hide">
+              <ul class="rw-list">
+                <li class="select-li"><span>是否符合要求：</span>
+                  <div class="weui-cell__bd">
+                    <select class="weui-select" name="select1">
+                      <option selected="" value="1">请选择</option>
+                      <option value="2">是</option>
+                      <option value="3">否</option>
+                    </select>
+                  </div>
+                </li>
+                <li class="long-textarea"> <span>问题描述及处理措施：</span>
+                  <div class="weui-cell__bd">
+                    <textarea class="weui-textarea" placeholder="请填写问题描述及处理措施" rows="3"></textarea>
+                    <div class="weui-textarea-counter" style="text-align:right;"><em>0</em>/200</div>
+                  </div>
+                </li>
+                <li class="long-textarea"> <span>处理建议：</span>
+                  <div class="weui-cell__bd">
+                    <textarea class="weui-textarea" placeholder="请填写处理建议" rows="3"></textarea>
+                    <div class="weui-textarea-counter" style="text-align:right;"><em>0</em>/200</div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <div class="nr-box"><span>4、</span>对自查发现问题的整改情况，检查对自查发现问题整改措施落实情况的文件或记录。<i class="iconfont icon-jiantou"></i></div>
+            <div class="jgnr-hide">
+              <ul class="rw-list">
+                <li class="select-li"><span>是否符合要求：</span>
+                  <div class="weui-cell__bd">
+                    <select class="weui-select" name="select1">
+                      <option selected="" value="1">请选择</option>
+                      <option value="2">是</option>
+                      <option value="3">否</option>
+                    </select>
+                  </div>
+                </li>
+                <li class="long-textarea"> <span>问题描述及处理措施：</span>
+                  <div class="weui-cell__bd">
+                    <textarea class="weui-textarea" placeholder="请填写问题描述及处理措施" rows="3"></textarea>
+                    <div class="weui-textarea-counter" style="text-align:right;"><em>0</em>/200</div>
+                  </div>
+                </li>
+                <li class="long-textarea"> <span>处理建议：</span>
+                  <div class="weui-cell__bd">
+                    <textarea class="weui-textarea" placeholder="请填写处理建议" rows="3"></textarea>
+                    <div class="weui-textarea-counter" style="text-align:right;"><em>0</em>/200</div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </form>
+    </div>
+    <div class="footer-btn"> <a href="#" class="btn big-btn">保 存</a> </div>
+  </div>
+</div>
+</body>
+</html>
+<script>
+$(document).ready(function () {
+	//学科展开收起;
+    $(".nr-box").click(function () {
+              // $(this).next('.jgnr-hide').slideToggle();
+			if($(this).next('.jgnr-hide').is(":hidden")){
+				$(this).next('.jgnr-hide').slideDown();
+				$(this).find('.iconfont').addClass("icon-rotate");
+			}else{
+				$(this).next('.jgnr-hide').slideUp();
+				$(this).find('.iconfont').removeClass("icon-rotate");
+			}
+           });
+});
+</script>
